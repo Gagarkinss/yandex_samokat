@@ -1,0 +1,13 @@
+scooter_rent=# SELECT c.login, o.track
+scooter_rent-# FROM "Couriers" AS c
+scooter_rent-# LEFT JOIN "Orders" AS o ON c.id = o."courierId"
+scooter_rent-# WHERE o."inDelivery" = true;
+    login    | track
+-------------+--------
+ goodcourier | 205288
+ goodcourier | 205288
+ badcourier  | 525335
+ badcourier  | 525335
+ badcourier  |  80925
+ badcourier  |  80925
+(6 rows)
